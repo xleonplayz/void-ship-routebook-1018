@@ -1,0 +1,11 @@
+{
+  "name": "void-ship-routebook-1018",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "assets": "node tools/build-assets.mjs",
+    "start": "node server.js"
+  }
+}
