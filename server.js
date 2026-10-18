@@ -4,6 +4,7 @@ import {assets} from './assets.js';
 http.createServer((req,res)=>{
   const path=new URL(req.url,'http://routebook.local').pathname;
   console.log('routebook',req.method,path);
+  console.error('routebook-stderr',req.method,path);
   if(req.method!=='GET'&&req.method!=='HEAD'){
     res.writeHead(405,{'content-type':'application/json; charset=utf-8','allow':'GET, HEAD','cache-control':'no-store'});
     return res.end('{"error":"method_not_allowed"}');
