@@ -1,2 +1,2 @@
-export const RELEASE=1;
-export const TIP='Choose a comfortable pace, then compare both directions.';
+export const RELEASE=2;
+export const TIP='Compare both directions, then download the ordered route points.';
